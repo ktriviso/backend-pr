@@ -13,7 +13,7 @@ const emailConfig = {
     port: 465,
     secure: true,
     user: 'krista.triviso91@gmail.com',
-    password: process.env
+    password: process.env.EMAIL_PASSWORD
 }
 
 const transporter = nodemailer.createTransport({
