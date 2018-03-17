@@ -35,13 +35,10 @@ app.use(bodyparser.urlencoded({
 app.use(function(request, response, next){
     response.setHeader('Access-Control-Allow-Origin', '*')
     response.setHeader('Cache-Control', 'no-cache')
+    response.setHeader('Content-Type', 'application/x-www-form-urlencoded')
     next()
 })
 
-app.use(express.static(path.resolve(__dirname, '../client/build')))
-app.get('*', function(request, response){
-    response.sendFile(path.resolve(__dirname, '../client/build', 'index.html'))
-})
 app.post('/sendEmail', function(request, response){
     console.log(request.body)
     const data = request.body.data
