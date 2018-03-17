@@ -34,8 +34,7 @@ app.use(bodyparser.urlencoded({
 
 app.use(function(request, response, next){
     response.setHeader('Access-Control-Allow-Origin', '*')
-    response.setHeader('Cache-Control', 'no-cache')
-    response.setHeader('Content-Type', 'application/json')
+    response.setHeader('Access-Control-Allow-Headers', '*')
     next()
 })
 
