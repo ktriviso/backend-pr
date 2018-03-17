@@ -1,0 +1,27 @@
+{
+  "name": "paul-production",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "heroku-postbuild": "cd client/ && npm install && npm install --only=dev && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktriviso/paulproduction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ktriviso/paulproduction/issues"
+  },
+  "homepage": "https://github.com/ktriviso/paulproduction#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "nodemailer": "^4.4.1"
+  }
+}
