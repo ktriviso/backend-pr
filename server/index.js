@@ -40,7 +40,7 @@ app.use(function(request, response, next){
 
 app.post('/sendEmail', function(request, response){
     console.log(request.body)
-    const data = request.body
+    const data = request.body.data
     const emailInfo = {
         from: data.email,
         to: emailConfig.user,
