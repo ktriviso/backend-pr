@@ -12,7 +12,7 @@ const emailConfig = {
     host: 'smtp.gmail.com',
     port: 465,
     secure: true,
-    user: 'info.prprogramming@gmail.com',
+    user: 'Info@pr-programming.com',
     password: process.env.EMAIL_PASSWORD
 }
 
